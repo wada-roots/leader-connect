@@ -24,20 +24,20 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Name */}
-          <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-primary">
-              Hon. [Politician Name]
+          <div className="flex items-center flex-shrink-0">
+            <Link to="/" className="text-lg sm:text-xl lg:text-2xl font-bold text-primary truncate">
+              Hon. Deal Moja Safi
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+          <div className="hidden lg:block">
+            <div className="ml-4 xl:ml-10 flex items-baseline space-x-2 xl:space-x-4">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                  className={`px-2 xl:px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActiveLink(item.href)
                       ? 'text-primary bg-accent'
                       : 'text-foreground hover:text-primary hover:bg-accent/50'
@@ -50,20 +50,21 @@ const Navigation = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button variant="cta" size="sm">
+          <div className="hidden lg:block flex-shrink-0">
+            <Button variant="cta" size="sm" className="text-xs xl:text-sm">
               Get Involved
             </Button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="flex-shrink-0"
             >
-              {isMenuOpen ? <X /> : <Menu />}
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
@@ -71,7 +72,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-background border-t border-border">
+        <div className="lg:hidden bg-background border-t border-border">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <Link

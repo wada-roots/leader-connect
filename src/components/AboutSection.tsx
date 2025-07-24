@@ -49,7 +49,7 @@ const AboutSection = () => {
             
             <div className="prose prose-lg text-muted-foreground mb-8">
               <p className="mb-4">
-                Born and raised in [Constituency Name], I have witnessed firsthand the challenges 
+                Born and raised in Kenya, I have witnessed firsthand the challenges 
                 and opportunities that define our community. My journey in public service began 
                 with a simple belief: that every Kenyan deserves access to quality education, 
                 healthcare, and economic opportunities.

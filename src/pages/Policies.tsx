@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
+import PoliciesSection from '@/components/PoliciesSection';
 import Footer from '@/components/Footer';
 
-const Index = () => {
+const Policies = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -11,12 +11,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <main>
-        <Hero />
+      <main className="pt-16">
+        <PoliciesSection />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default Policies;

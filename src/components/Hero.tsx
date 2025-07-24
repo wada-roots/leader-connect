@@ -19,14 +19,14 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-white">
-            <h1 className="text-hero font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-hero font-bold mb-6 leading-tight">
               Building a
               <span className="block text-secondary"> Prosperous Kenya</span>
               <span className="block">Together</span>
             </h1>
             
-            <p className="text-xl mb-8 max-w-2xl leading-relaxed opacity-90">
-              Dedicated to serving the people of [Constituency Name] with integrity, 
+            <p className="text-lg sm:text-xl mb-8 max-w-2xl leading-relaxed opacity-90">
+              Hon. Deal Moja Safi - Dedicated to serving the people of Kenya with integrity, 
               vision, and unwavering commitment to progress. Join me in creating 
               lasting change for our communities.
             </p>
@@ -62,10 +62,10 @@ const Hero = () => {
           {/* Portrait Image */}
           <div className="lg:flex justify-center hidden">
             <div className="relative">
-              <div className="w-96 h-96 rounded-full overflow-hidden border-4 border-white shadow-elegant">
+              <div className="w-72 h-72 xl:w-96 xl:h-96 rounded-full overflow-hidden border-4 border-white shadow-elegant">
                 <img 
                   src={politicianPortrait} 
-                  alt="Hon. [Politician Name]"
+                  alt="Hon. Deal Moja Safi"
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -43,9 +43,9 @@ const Footer = () => {
         <div className="py-12 grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Hon. [Politician Name]</h3>
+            <h3 className="text-2xl font-bold mb-4">Hon. Masaki</h3>
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Dedicated to serving the people of [Constituency Name] with integrity, 
+              Dedicated to serving the people of east africa with integrity, 
               transparency, and a commitment to sustainable development.
             </p>
             <div className="flex space-x-4">
@@ -102,7 +102,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
                 <div className="text-primary-foreground/80">
                   <p>[Office Address]</p>
-                  <p>[City, County]</p>
+                  <p>Nairobi</p>
                   <p>Kenya</p>
                 </div>
               </div>
@@ -114,7 +114,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <span className="text-primary-foreground/80">office@[politicianname].com</span>
+                <span className="text-primary-foreground/80">office@masaki.com</span>
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
-            <p>© 2024 Hon. [Politician Name]. All rights reserved.</p>
+            <p>© 2025 Hon.Masaki. All rights reserved.DMS.</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link to="/privacy" className="hover:text-secondary transition-colors">
                 Privacy Policy

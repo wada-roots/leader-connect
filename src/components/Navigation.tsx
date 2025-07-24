@@ -26,7 +26,7 @@ const Navigation = () => {
           {/* Logo/Name */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="text-lg sm:text-xl lg:text-2xl font-bold text-primary truncate">
-              Hon. Deal Moja Safi
+              Hon. Masaki
             </Link>
           </div>
 
